@@ -23,4 +23,12 @@ So Who knows
 Made By: Michal Krakowski (M12Gyt)
 
 Journal/Logs:
-None Yett..
+
+# 01 | Sent it off for Shipping
+
+Well! This is my progress on V2.
+
+Currently got Portfolio, Home and pictures.
+So like yeah..
+
+I don't really know what to put here.
