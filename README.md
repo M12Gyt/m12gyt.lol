@@ -19,3 +19,7 @@ So yeah. As shown here. This might be possibly moved to the domain m12gyt.lol.
 So Who knows
 
 Made By: Michal Krakowski (M12Gyt)
+
+Journal/Logs:
+
+Coming Sooner or later!
