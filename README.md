@@ -32,3 +32,13 @@ Currently got Portfolio, Home and pictures.
 So like yeah..
 
 I don't really know what to put here.
+
+# 02 | Main Website Updates.
+
+Added some aaeehhh mazing tabs.
+First of all added to portfolio my work. its a separate tab you should only be able to access via that.
+
+Also added a 404 page and 403 for no reason.
+
+Added some more images to the images tab! Well that's what I am putting here.
+I could go on and on about this small site for a hour. So im going to end the log here.
