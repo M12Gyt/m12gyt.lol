@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
     <title>M12Gyt.lol</title>
-  </head>
-  <div class="pb-2 pt-2 ps-6 bg-black text-white text-[26px]">
-  <a class="hover:text-blue-400" href="https://m12gyt.lol">Home</a> / <a class="hover:text-blue-400" href="/images">Images</a> / <a class="hover:text-blue-400" href="/portfolio">Portfolio</a>
-  </div>
-<br>
-  <div class=" w-96 rounded-[3vw] pt-3 pb-3 bg-blue-600 text-white text-center text-[20px] place-content-center mx-auto">
-    <p class=" text-[24px]"> Welcome to M12Gyt.lol!</p>
-  </div>
-  <div class="text-center">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: 'Google Sans', Arial, sans-serif; 
+               background: #f8f9fa; 
+            }
+       nav {
+        position: sticky;
+        top: 0; /* Fixed: Added unit (or set to 0) */
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.82);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+        height: 48px; 
+        }
+
+        .gsthin {
+        font-family: 'Google Sans', sans-serif;
+        font-weight: 200;
+          }
+
+        .gsmedtitle {
+        font-family: 'Google Sans', sans-serif;
+        font-weight: 450;
+        font-size: 50px;
+        line-height: 1.4;
+        }
+
+        .hero { 
+         background: rgba(255, 255, 255,0.78);
+         min-height: 92vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         padding: 20px 24px 0;
+        }
+        .midstuff { 
+         background: rgba(255, 255, 255,0.78);
+         min-height: 20vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         padding: 20px 24px 0;
+        }
+       .footer { 
+         background: rgba(255, 255, 255,0.68);
+         min-height: 5vh;
+         display: flex;
+         flex-direction: column;
+         align-items: left;
+         justify-content: left;
+         text-align: left;
+         padding: 32px 48px 0;
+        }
+        .bluebutton {
+          background: #1a73e8;
+          color: white;
+          padding: 7px 28px;
+          border-radius: 50px;
+          font-size: 15px;
+          text-decoration: none;
+          font-weight: 300;
+          margin-bottom: 40px;
+          display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p style="font-size: 23px;" class="gsthin">M12Gyt.lol</p>
+    </nav>
+    <section class="hero" >
+        <h1 class="gsmedtitle">Welcome to M12Gyt.lol</h1>
+        <a style="font-size: 23px;">Scroll Down For More</a>
+        <br>
+    </section>
+<section class="midstuff">
+            <h1 class="gsmedtitle">Hi I'm M12.</h1>
+        <p style="font-size: 23px;" class="gsthin">Just a polish femboy coding random stuff</p>
+        <p style="font-size: 21px;" class="gsthin">The "Linktree"</p>
+        <br>
+        <a class="bluebutton">LinkTree Button :3</a>
+</section>
+<footer class="footer">
+    <a style="font-size: 23px; font-weight: 300;">M12Gyt.lol by M12Gyt</a>
     <br>
-    <p class="text-[24px]"> Hi i'm M12.</p>
-    <img class="pt-4 pb-4 h-36 w-36 place-content-center mx-auto" src="res/saywalahi.jpg" alt="Picture of My Guinea Pigs" />
+    <a style="font-size: 23px" href="mailto:m12gyt@m12gyt.lol">Contact</a>
+    <a style="font-size: 23px" href="portfolio.html">Porfolio</a>
+    <a style="font-size: 23px" href="legacyhub.html">Legacy Pages</a>
     <br>
-    <p class="text-[22px]"> I am from Poland currently living In Belgium.</p>
-    <br>
-    <p class="text-[19px]"> This is my personal website. Made in HTML and with tailwindcss!</p>
-    <br>
-    <a class="hover:text-blue-500 text-[22px]" href="https://github.com/M12Gyt">Github</a> // <a class="hover:text-red-500 text-[22px]" href="https://www.youtube.com/@M12Gyttech">Youtube</a>
-    </div>
-      <div class=" w-96 rounded-[0.5vw] pt-3 pb-3 bg-blue-600 text-white text-center text-[20px] place-content-center mx-auto">
-    <p class="text-[17px]"> If you want to contact me you can do it on:</p>
-    <p> Discord: @M12Gyt</p>
-    <p> Hack Club Slack: Also M12Gyt</p>
-    <p> Or on youtube in my comments: </p><a class="hover:text-red-500" href="https://www.youtube.com/@M12Gyttech">@M12Gyttech</a>
-    <br>
-    <p> Optionally you can contact me via email on: TehM12Gyt@gmail.com</p>
-  </div>
-        <div class="pt-4 text-center text-[24px]">
-        <p>Random Quotes</p>
-    </div>
-    <div class="pt-4 pb-4 text-center text-[20px]">
-        <p>"Very Amazing Website"</p>
-        <p class="text-[13px]">10/10</p>
-        <p class="text-[19px]">-Raad</p>
-    </div>
-        <div class="pt-4 pb-4 text-center text-[20px]">
-        <p>"Help M12 has kidnapped me and I am in his basement"</p>
-        <p class="text-[13px]">10/10</p>
-        <p class="text-[19px]">-Sir Michael Scott</p>
-    </div>
-            <div class="pt-4 pb-4 text-center text-[20px]">
-        <p>"doug doug doug doug doug doug doug doug"</p>
-        <p class="text-[13px]">doug/doug</p>
-        <p class="text-[19px]">-DougDoug</p>
-    </div>
-    <br>
-  </div>
-  <div class="pb-1 pt-1 bg-black text-white text-center">
-  <footer> Made by M12Gyt</footer>
-  <p class="pb-4">John Pork is calling</p>
-  </div>
+</footer>
+
+
+
+</body>
+
 
 </html>
