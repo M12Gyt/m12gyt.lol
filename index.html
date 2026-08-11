@@ -11,7 +11,7 @@
             }
        nav {
         position: sticky;
-        top: 0; /* Fixed: Added unit (or set to 0) */
+        top: 0;
         z-index: 100;
         background: rgba(255, 255, 255, 0.82);
         border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -78,11 +78,98 @@
           margin-bottom: 40px;
           display: inline-block;
         }
+
+        /* Hamburger menu styles */
+        .nav-links {
+          display: flex;
+          gap: 24px;
+          list-style: none;
+        }
+        .nav-links a {
+          text-decoration: none;
+          color: #202124;
+          font-family: 'Google Sans', sans-serif;
+          font-weight: 400;
+          font-size: 15px;
+        }
+        .hamburger {
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 24px;
+          height: 18px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0;
+          z-index: 200;
+        }
+        .hamburger span {
+          display: block;
+          height: 2px;
+          width: 100%;
+          background: #202124;
+          border-radius: 2px;
+          transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+        .hamburger.active span:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+
+        @media (max-width: 640px) {
+          .hamburger {
+            display: flex;
+          }
+          .nav-links {
+            position: absolute;
+            top: 48px;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.25s ease;
+          }
+          .nav-links.open {
+            max-height: 300px;
+          }
+          .nav-links li {
+            width: 100%;
+            text-align: center;
+          }
+          .nav-links a {
+            display: block;
+            padding: 14px 0;
+          }
+        }
     </style>
 </head>
 <body>
     <nav>
         <p style="font-size: 23px;" class="gsthin">M12Gyt.lol</p>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="linktree.html">LinkTree</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="legacyhub.html">Legacy Pages</a></li>
+            <li><a href="mailto:m12gyt@m12gyt.lol">Contact</a></li>
+        </ul>
     </nav>
     <section class="hero" >
         <h1 class="gsmedtitle">Welcome to M12Gyt.lol</h1>
@@ -108,9 +195,16 @@
     <br>
 </footer>
 
+<script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
 
+    hamburgerBtn.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        hamburgerBtn.classList.toggle('active');
+        hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    });
+</script>
 
 </body>
-
-
 </html>
