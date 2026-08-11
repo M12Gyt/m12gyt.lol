@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>M12Gyt.lol</title>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/res/M12Gytlolcatlogo.png">
@@ -31,8 +33,8 @@
         .gsmedtitle {
         font-family: 'Google Sans', sans-serif;
         font-weight: 450;
-        font-size: 50px;
-        line-height: 1.4;
+        font-size: clamp(28px, 8vw, 50px);
+        line-height: 1.3;
         }
 
         .hero { 
@@ -61,11 +63,24 @@
          min-height: 5vh;
          display: flex;
          flex-direction: column;
-         align-items: left;
-         justify-content: left;
+         align-items: flex-start;
+         justify-content: flex-start;
          text-align: left;
-         padding: 32px 48px 0;
+         padding: 32px 24px;
          border-top: 2px solid rgba(0, 0, 0, 0.06);
+        }
+        .footer-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px 20px;
+          margin-top: 10px;
+        }
+        .footer-links a,
+        .footer a {
+          font-size: 18px;
+          color: #202124;
+          text-decoration: none;
+          padding: 4px 0;
         }
         .bluebutton {
           background: #1a73e8;
@@ -187,12 +202,12 @@
         <a class="bluebutton" href="linktree.html">LinkTree Button :3</a>
 </section>
 <footer class="footer">
-    <a style="font-size: 23px; font-weight: 300;">M12Gyt.lol by M12Gyt</a>
-    <br>
-    <a style="font-size: 23px" href="mailto:m12gyt@m12gyt.lol">Contact</a>
-    <a style="font-size: 23px" href="portfolio.html">Porfolio</a>
-    <a style="font-size: 23px" href="legacyhub.html">Legacy Pages</a>
-    <br>
+    <a style="font-size: 20px; font-weight: 300;">M12Gyt.lol by M12Gyt</a>
+    <div class="footer-links">
+        <a href="mailto:m12gyt@m12gyt.lol">Contact</a>
+        <a href="portfolio.html">Porfolio</a>
+        <a href="legacyhub.html">Legacy Pages</a>
+    </div>
 </footer>
 
 <script>
